@@ -9,3 +9,9 @@ if game.PlaceId == 6872265039 then do
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Bedwars"))()
 end
 end
+
+--Arsenal
+if game.PlaceId == 286090429 then do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Bedwars"))()
+end
+end
