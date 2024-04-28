@@ -12,6 +12,6 @@ end
 
 --Arsenal
 if game.PlaceId == 286090429 then do
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Bedwars"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Arsenal"))()
 end
 end
