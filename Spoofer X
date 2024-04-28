@@ -1,0 +1,5 @@
+--Blox Fruits
+if game.PlaceId == 2753915549 then do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Blox%20Fruits"))()
+end
+end
