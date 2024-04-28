@@ -15,3 +15,9 @@ if game.PlaceId == 286090429 then do
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Arsenal"))()
 end
 end
+
+--Blade Ball
+if game.PlaceId == 13772394625 then do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Blade%20Ball"))()
+end
+end
