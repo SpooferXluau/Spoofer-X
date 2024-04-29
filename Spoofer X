@@ -21,3 +21,9 @@ if game.PlaceId == 13772394625 then do
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Blade%20Ball"))()
 end
 end
+
+--Jailbreak
+if game.PlaceId == 606849621 then do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Jailbreak"))()
+end
+end
