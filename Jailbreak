@@ -1,0 +1,37 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = BlekLib:Create({
+    Name = "Spoofer X",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local maintab = win:Tab('Main')
+local uitab = win:Tab('Settings')
+maintab:Button('Vortex', function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/devnorb/vortexjb/main/loader.lua"))()
+
+end)
+maintab:Button('Weinz Hub', function()
+  loadstring(game:HttpGet('https://weinzspace.com/cata/hub.lua'))()
+end)
+maintab:Button('Lunar X', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript",true))()
+end)
+maintab:Button('Sky Hub', function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/arlists/Sky-Hub/main/Main", true))()
+end)
+maintab:Button('Sexation', function()
+  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+end)
+maintab:Button('Project Auto', function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Free'))() 
+end)
+
+uitab:Button('Copy Discord To Clipboard', function()
+    setclipboard("https://discord.gg/Ruubj37Yya")
+end)
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
