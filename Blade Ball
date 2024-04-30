@@ -1,0 +1,34 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = BlekLib:Create({
+    Name = "Spoofer X",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local maintab = win:Tab('Main')
+local uitab = win:Tab('Settings')
+maintab:Button('W-azure', function()
+       _G.UI_Size = 200 -- config ui size
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end)
+maintab:Button('Zap Hub', function()
+loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+end)
+maintab:Button('Alchemy Hub', function()
+v=1;loadstring(game:HttpGet("https://alchemyhub.xyz/v2"))()
+end)
+maintab:Button('Scout Hub', function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Kozukiremboukk/Aqui-mesml/main/blades")))()
+end)
+maintab:Button('Daki Hub', function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/dakiiuem/BladeBall/main/DakiiBladeBall", true))()
+end)
+
+uitab:Button('Copy Discord To Clipboard', function()
+    setclipboard("https://discord.gg/Ruubj37Yya")
+end)
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
