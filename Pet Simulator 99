@@ -1,0 +1,26 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = BlekLib:Create({
+    Name = "Spoofer X",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local maintab = win:Tab('Main')
+local uitab = win:Tab('Settings')
+maintab:Button('RedZ Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))() 
+end)
+maintab:Button('Lenut Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lenutjr/lenut/main/scripts"))()
+end)
+maintab:Label('Pet Simulator 99 Has Alot Of Fake Scripts')
+maintab:Label('We have tested both of these and they are 100% Safe')
+
+uitab:Button('Copy Discord To Clipboard', function()
+    setclipboard("https://discord.gg/Ruubj37Yya")
+end)
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
