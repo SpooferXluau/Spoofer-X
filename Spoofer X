@@ -27,3 +27,9 @@ if game.PlaceId == 606849621 then do
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Jailbreak"))()
 end
 end
+
+--PS99
+if game.PlaceId == 8737899170 then do
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpooferXluau/Spoofer-X/main/Pet%20Simulator%2099"))()
+end
+end
