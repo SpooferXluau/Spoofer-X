@@ -1,0 +1,49 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = BlekLib:Create({
+    Name = "Spoofer X",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local maintab = win:Tab('Main')
+local uitab = win:Tab('Settings')
+maintab:Button('Thunder Client', function()
+       getgenv().thunderclient = true
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/verified/dca3e69649ed196af0ac6577f743a0ae.lua"))()
+end)
+maintab:Button('Owl Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+maintab:Button('AirHub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+end)
+maintab:Button('Tbao Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/ArsenalTbaoHubNew"))()
+end)
+maintab:Button('Hitbox Expander', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+maintab:Button('Gun Mods', function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+game.UserInputService.InputBegan:Connect(function(i, g)
+    if i.UserInputType == Enum.UserInputType.MouseButton1 and not g and not game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.equipping.Value then
+        game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.DISABLED.Value = true -- idk
+        game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount.Value = 300 -- inf ammo
+        game.Players.LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount2.Value = 300 -- inf ammo
+        require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).firebullet() -- more damage or double shoot
+    end
+end)
+
+for _, v in pairs(game.ReplicatedStorage.Weapons:GetDescendants()) do if v.Name == 'RecoilControl' then v.Value = 0 end if v.Name == 'MaxSpread' then v.Value = 0 end if v.Name == 'Auto' then v.Value = true end end
+end)
+
+uitab:Button('Copy Discord To Clipboard', function()
+    setclipboard("https://discord.gg/Ruubj37Yya")
+end)
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
