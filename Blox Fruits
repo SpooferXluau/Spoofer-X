@@ -1,0 +1,46 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = BlekLib:Create({
+    Name = "Spoofer X",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local maintab = win:Tab('Main')
+local uitab = win:Tab('Settings')
+maintab:Button('W-azure', function()
+getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+getgenv().SlowLoadUi  = false
+getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+end)
+maintab:Button('Mango Hub', function()
+loadstring(game:HttpGet("https://gitlab.com/L1ZOT/mango-hub/-/raw/main/Mango-Bloxf-Fruits-Beta"))()
+end)
+maintab:Button('Lunar X', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript",true))()
+end)
+maintab:Button('Hoho Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+end)
+maintab:Button('Speed Hub X', function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
+end)
+maintab:Button('Min Hub', function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingVIP.lua")()
+end)
+maintab:Button('Stingray Autofram', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Manta/Public-Stingray/main/Script_BloxFruitsFullAuto"))()
+end)
+maintab:Button('Mmb Hub', function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/0135"))()
+end)
+uitab:Button('Copy Discord To Clipboard', function()
+    setclipboard("https://discord.gg/Ruubj37Yya")
+end)
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
